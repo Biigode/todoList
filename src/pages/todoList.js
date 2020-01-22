@@ -66,7 +66,7 @@ export default function TodoList({navigation}) {
             </View>
             <View style={styles.viewItem}>
               <Text>Data: </Text>
-              <Text>{item.data}</Text>
+              <Text>{item.data.toString().substring(0, 10)}</Text>
             </View>
             <RNSlidingButton
               height={35}
