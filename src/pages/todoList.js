@@ -32,7 +32,8 @@ export default function TodoList({navigation}) {
       }
     }
     validaTodo();
-    this.focusListener = navigation.addListener('didFocus', () => {
+    this.focusListener = navigation.addListener
+    ('didFocus', () => {
       validaTodo();
     });
   }, [count]);
